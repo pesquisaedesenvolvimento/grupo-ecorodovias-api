@@ -21,8 +21,7 @@ export const inserirDadoSensor = functions.https.onRequest((req, response) => {
             data: item.data,
             gruposensorid: grupoSensorId,
             sensor1: item.sensor1,
-            sensor2: item.sensor2,
-            sensor3: item.sensor3
+            sensor2: item.sensor2
         })
         .then(()=>{
             return response.status(200).send('Inserido com sucesso.');
@@ -41,7 +40,6 @@ class DadosSensores {
     public gruposensorid: FirebaseFirestore.DocumentReference | undefined;
     public sensor1: number | undefined;
     public sensor2: number | undefined;
-    public sensor3: number | undefined;
 }
 
 // class GruposSensores {
