@@ -10,3 +10,11 @@ Instalação de sensores de presença que irão ficar acoplado ao chão no mesmo
 
 *INFORMAÇÃO DE CONSULTA*
 Com os dados em mãos, independente da plataforma escolhida, podemos criar dashboards e alertas sobre o crescimento e manutenção da vegetação de uma determinada região das rodovias administradas.
+
+WEB-API:	https://us-central1-grupo-ecorodovias.cloudfunctions.net/inserirDadoSensor
+Exemplo	de	chamada	POST:
+{
+"gruposensorid":	"HBkbutSH2vtske7JHLyi",
+"sensor1":200,
+"sensor2":150
+}
